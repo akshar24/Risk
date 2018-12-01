@@ -1,4 +1,4 @@
-// var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';
+
 var banks = JSON.parse(data);
 
 		var mymap = L.map('mapid').setView([38.63213759515948,-90.19126018891603], 4);
@@ -42,11 +42,8 @@ var banks = JSON.parse(data);
 			console.log("Before: " + newMapMarkers.length);
 
 			var tempLength = newMapMarkers.length;
-			// for(var i = 0; i < tempLength; i++) {
-			// 	mymap.removeLayer(newMapMarkers[i]);
-			// }
-			var indexes = [];
 
+			var indexes = [];
 			for(var i = 0; i < banks.length; i++) {
 				if(select.value == banks[i].Acquiring) {
 					indexes.push(i);
@@ -77,16 +74,5 @@ var banks = JSON.parse(data);
 						markersLayer.addLayer(line);
 						console.log(newLatLong)
 					}
-
-        		// mymap.addLayer(newMapMarkers[i]);
 			}
-
-			console.log("After: " + newMapMarkers.length);
-		}
-
-		// if that drop down is equal to the acquiring institution of the markers available
-		// only show those markers
-
-		function onClick(e) {
-    		// console.log(this);
 		}
