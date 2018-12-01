@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>RI$K</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+
+
+</head>
+<body>
+	<div class="container">
+		<div id="mapid"></div>
+
+		<div class="row">
+			<div class="form-group col-md-4">
+		      <label for="inputBank">Bank</label>
+		      <select id="inputBank" class="form-control" onChange="changeMarkers()">
+		        <option selected>Choose...</option>
+		        <option>...</option>
+		      </select>
+		    </div>
+		    <div class="form-group col-md-2">
+		      <label for="inputEvent">Event</label>
+		      <select id="inputEvent" class="form-control">
+		        <option selected>Choose...</option>
+		        <option>Buyout</option>
+		        <option>Avg CCR</option>
+		      	<option>Y-14</option>
+		        <option>Texas Ratio</option>
+		      </select>
+		    </div>
+<!-- 		    <form class="range-field col-md-2">
+		    	<label for="inputZip">Value Threshold</label>
+			    <input type="range" min="0" max="100" />
+			</form> -->
+		</div>
+	</div>
+
+	<footer class="footer" id = "footer">
+      <div class="container">
+        <span class="text-muted">RI$K</span>
+      </div>
+    </footer>
+
+
+ 	<script type="text/javascript" src="banklist.json"></script>
+	<script src="script.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+<style>
+ #footer{
+	position: fixed;
+	height: 40px;
+	padding-bottom: 20px;
+ }
+</style>
+</html>
