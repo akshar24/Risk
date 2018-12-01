@@ -3,5 +3,5 @@ Risk (Prototype). This is a prototype of an unique idea of creating a system for
 
 This is just a prototyope of this idea and can be fully built if there is an access Y-14 dataset held by Federal Reserve System. But getting access to Y-14 requires permissions from Board members of FED Members and all.
 
-Tech Stack: HTML, CSS, Javascript, Bootstrap, Angular, Node js
+Tech Stack: HTML, CSS, Javascript, Bootstrap,  Node js, Leaflet API to include interactive World map. 
 
