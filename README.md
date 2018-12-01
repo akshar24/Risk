@@ -1,0 +1,2 @@
+# Risk
+Risk (Prototype). This is a prototype of an idea of creating a system that understand internal relationships between different banks across the United States and design a metric that determines how failure in one can cause other banks to fail using factors like Counterparty Risk, Buyout, Texas Ration, etc. It uses Graph Theory and Predictive modeling to understand the banks on bank network created from available datasets.
